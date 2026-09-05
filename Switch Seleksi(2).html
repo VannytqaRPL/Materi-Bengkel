@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hadiah</title>
+</head>
+<body>
+    
+    <script>
+    var nama = prompt("Masukkan Nama Mu");
+     while(nama === "" || nama === null) {
+        alert("Mohon Isi Nama Dengan Benar!");
+        nama = prompt ("Masukkan Nama Dengan Benar");
+     }
+    alert("Selamat Datang " + nama + " Di Seleksi Bintara");
+
+    var b = confirm("Apakah Anda Masih Ingin Menjadi Tentara?");
+      if(b) {
+        alert("Selamat " + nama + " Kamu Menjadi Tentara,Tetap Semangat");
+      } else {
+        alert("Yang Terhormat "+ nama + " Anda Dapat Meninggalkan Halaman");
+      }
+    </script>
+
+</body>
+</html>

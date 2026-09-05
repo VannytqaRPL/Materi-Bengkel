@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kasirhama.com</title>
+</head>
+<body>
+
+   <h2 style="text-align: center; color: #ff5733; font-family: 'Franklin Gothic Medium', Arial, sans-serif; text-shadow: 1px 1px 3px #999;">Kasir</h2>
+   
+    <label for="Gender" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Gender:</label><br>
+    <select id="Gender">
+        <option value="Pria">Pria</option>
+        <option value="Wanita">Wanita</option>
+        <option value="Pilih">Pilih</option>
+    </select>
+    <br>
+
+    <label for="Barang" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Barang:</label><br>
+     <input type="text" id="Barang" value=""><br>
+    <label for="Harga" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Harga:</label><br>
+     <input type="number" id="Harga" value=""><br>
+    <label for="JumlahBeli" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">JumlahBeli:</label><br>
+     <input type="number" id="JumlahBeli" value=""><br>
+    <label for="Cash" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Cash:</label><br>
+     <input type="number" id="Cash" value=""><br>
+
+     <h3>Pencet Tombol Dibawah Ini</h3>
+
+   <script>
+        var Password = prompt("Masukkan Password:") 
+        while (Password ===! "Kasir") {
+       alert("Password salah,Silahkan Coba Lagi");
+       password = prompt("Masukkan Password:");
+        }
+     alert("Selamat Datang di Kasir!")
+    </script>
+     
+     <form>
+  <button type="button" onclick='
+    var Barang = document.getElementById("Barang").value;
+    var Harga = Number(document.getElementById("Harga").value);
+    var JumlahBeli = Number(document.getElementById("JumlahBeli").value);
+    var Cash = Number(document.getElementById("Cash").value);
+    var Gender = document.getElementById("Gender").value;
+
+     if(Gender === "Pilih") {
+      alert("Pilih Gendermu Sesuai Dirimu");
+      return;
+     }
+      var totalHarga= Harga * JumlahBeli;
+      var diskon = 0;
+     if(totalHarga >= 10000) {
+      diskon = totalHarga * (5/100);
+      alert("Selamat Anda Mendapatkan Diskon");
+    } 
+    var totalBayar = totalHarga - diskon;
+    var kembalian = Cash - totalBayar;
+
+   document.getElementById("BarangHasil").innerHTML = "Barang: " + Barang;
+   document.getElementById("HargaHasil").innerHTML = "Harga: " + Harga;
+   document.getElementById("JumlahBeliHasil").innerHTML = "JumlahBeli: " + JumlahBeli;
+   document.getElementById("totalHargaHasil").innerHTML = "totalHarga: " + totalHarga;
+   document.getElementById("diskonHasil").innerHTML = "diskon: " + diskon;
+   document.getElementById("totalBayarHasil").innerHTML = "totalBayar: " + totalBayar;
+   document.getElementById("kembalianHasil").innerHTML = "kembalian: " + kembalian;
+   '>Hitung</button>
+    </form>
+
+    <label id="BarangHasil">Barang: </label><br>     
+    <label id="HargaHasil">Harga: </label><br>     
+    <label id="JumlahBeliHasil">Jumlah Beli: </label><br>     
+    <label id="totalHargaHasil">Total Harga: </label><br>     
+    <label id="diskonHasil">Diskon: </label><br>    
+    <label id="totalBayarHasil">Total Bayar: </label><br>
+    <label id="kembalianHasil">Kembalian: </label><br>
+<body style="background-color: darkturquoise;"></body>
+    
+
+
+      
+    
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+

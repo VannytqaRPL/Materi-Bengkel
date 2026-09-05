@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Bilangan Positif dan Negatif</title>
+</head>
+<body>
+  <h2 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; text-align: center;">Detector Ganjil Dan Genap</h2>
+
+  <script>
+    var Name = prompt("Masukkan Nama Mu");
+
+     while(Name === "" || Name === null) {
+       alert("Masukkan Nama Anda Dengan Benar");
+     Name = prompt("Masukkan Nama Mu");
+     }
+  alert("Hai " + Name + " Selamat Datang Di Detector Ganjil & Genap");
+  </script>   
+
+  <label for="Bilangan">Bilangan:</label>
+   <input type="number" id="Bilangan" value="">
+    
+   <form>
+   <button type="Button" onclick='
+    let Bilangan = Number(document.getElementById("Bilangan").value);
+      if(Bilangan % 2 === 0){
+        alert(Bilangan + " Adalah Bilangan Genap");
+      } else {
+        alert(Bilangan + " Adalah Bilangan Ganjil");
+      }
+      '>Pencet</button><br>
+   </form>
+</body>
+</html>
+
+    

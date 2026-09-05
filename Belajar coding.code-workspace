@@ -1,0 +1,13 @@
+{
+    "folders": [
+        {
+            "path": "../Latihan Coding"
+        },
+        {
+            "path": "."
+        }
+    ],
+    "settings": {
+        "liveServer.settings.multiRootWorkspaceName": "Latihan Coding"
+    }
+}

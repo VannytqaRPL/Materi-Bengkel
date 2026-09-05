@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Percabangan bertingkat</title>
+</head>
+<body>
+    
+   <h2 style="background-color: blue; text-align: center; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color: darkgreen;">Seleksi Perwira</h2>
+
+  <script>
+    var nama = prompt("Masukkan Nama Mu");
+     while(nama === "" || nama === null) {
+      alert("Masukkan Namamu Dengan Benar");
+      nama = prompt("Masukkan Nama Mu Dengan Benar");
+     }
+
+   alert("Selamat Datang " + nama +  " Di Seleksi Perwira TNI");
+  </script>
+
+  <script>
+  var Fisik = prompt("Masukkan Nilai Fisik Anda");
+  
+
+    while(Fisik === "" || Fisik === null) {
+     alert("Masukkan Nilai Mu Dengan Benar");
+     Fisik = prompt("Masukkan Nilai Fisikmu");
+    }
+
+      if(Fisik >= "90") {
+        alert("selamat Anda Lolos Tes Fisik");
+
+      var tulis = prompt("Masukkan Nilai tes Tulis Anda")
+      if(tulis >= "95") {
+      alert("Selamat Anda Telah Diterima Di TNi");
+      } else {
+        alert("Mohon Maaf anda Tidak Lolos TNI");
+        window.location.href = "Switch Seleksi(2).html"
+      }
+    } else {
+     alert("Mohon Maaf Anda Tidak Diterima Di Perwira Tni");
+     window.location.href = "Switch Seleksi(2).html"
+    }
+   </script>
+
+
+   
+</body>
+</html>

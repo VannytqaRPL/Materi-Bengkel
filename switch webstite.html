@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Percabangan switch/case</title>
+</head>
+<body>
+    <script>
+
+        var jawab = prompt("Silakan pilih program kasir,berat badan, dan gaji dengan memasukkan angka 1 sampai 3");
+        var program = "";
+        
+        switch(jawab){
+            case "1":
+                program = "Berat Badan";
+                alert("Anda Telah Memilih Program Berat Badan");
+                window.location.href = "Berat Badan.html";
+                break;
+            case "2":
+                program = "Kasir";
+                alert("Anda Telah Memilih Program Kasir");
+                window.location.href = "Kasir.html"
+                break;
+            case "3":
+                program = "gaji";
+                alert("Anda Telah Memilih Program gaji");
+                window.location.href = "gaji.html"
+                break;
+            
+            default:
+                alert("Mohon Pilih Angka Sesuai Perintah");
+        }
+
+        
+    </script>
+</body>
+</html>

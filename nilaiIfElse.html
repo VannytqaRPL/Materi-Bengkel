@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Percabangan if/else/if</title>
+</head>
+<body>
+    <script>
+        var kode = prompt("Masukkan Kode Hadiah 1-90:");
+        var Hadiah = "";
+
+        if(kode >= 90) Hadiah = "Montor"
+        else if(kode >= 80) Hadiah = "Kambing"
+        else if(kode >= 70) Hadiah = "Baju"
+        else if(kode >= 60) Hadiah = "Mie"
+        else Hadiah = "Anda Kurang Beruntung";
+
+        document.write(`<p>Hadiah anda: ${Hadiah}</p>`);
+    </script>
+</body>
+</html>
